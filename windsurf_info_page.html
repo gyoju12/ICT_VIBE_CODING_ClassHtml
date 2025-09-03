@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>윈드서핑의 모든 것</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0077be, #00a8e0);
+        }
+        .section-title {
+            @apply text-3xl font-bold text-center mb-4 text-gray-800;
+        }
+        .section-subtitle {
+            @apply text-center text-gray-500 mb-12;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+        }
+        .nav-link {
+            @apply text-white/80 hover:text-white transition-colors duration-200;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header -->
+    <header class="bg-gray-800/80 backdrop-blur-sm fixed top-0 left-0 right-0 z-50 shadow-md">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-white">Wind & Wave</a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link">소개</a>
+                <a href="#equipment" class="nav-link">장비</a>
+                <a href="#gallery" class="nav-link">갤러리</a>
+                <a href="#start" class="nav-link">시작하기</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white pt-32 pb-20">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold mb-4 leading-tight">바람을 타고 파도를 가르다</h1>
+            <p class="text-lg md:text-xl mb-8 text-white/90">자연과 하나 되는 역동적인 스포츠, 윈드서핑의 세계로 당신을 초대합니다.</p>
+            <a href="#about" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg">더 알아보기</a>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-16">
+        <!-- About Section -->
+        <section id="about" class="py-16">
+            <h2 class="section-title">윈드서핑이란?</h2>
+            <p class="section-subtitle">바람의 힘으로 물 위를 질주하는 매력적인 해양 스포츠입니다.</p>
+            <div class="max-w-4xl mx-auto text-center text-gray-700 leading-relaxed">
+                <p>윈드서핑은 보드 위에 돛(Sail)을 달아 바람의 힘을 이용해 물 위를 활주하는 스포츠입니다. 서핑의 짜릿함과 요트의 낭만을 동시에 느낄 수 있어 전 세계적으로 많은 사랑을 받고 있습니다. 잔잔한 바다에서의 여유로운 크루징부터 거친 파도를 넘나드는 익스트림한 점프까지, 다양한 스타일로 즐길 수 있는 것이 큰 매력입니다.</p>
+            </div>
+        </section>
+
+        <!-- Equipment Section -->
+        <section id="equipment" class="py-16 bg-gray-100 rounded-3xl">
+            <h2 class="section-title">필수 장비</h2>
+            <p class="section-subtitle">윈드서핑을 시작하기 위해 필요한 핵심 장비들을 소개합니다.</p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Equipment Card 1 -->
+                <div class="card">
+                    <div class="p-6 text-center">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 21.75l4.5-4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">보드 (Board)</h3>
+                        <p class="text-gray-600 text-sm">물 위에 뜨는 역할을 하며, 입문자용부터 전문가용까지 다양한 크기와 형태가 있습니다.</p>
+                    </div>
+                </div>
+                <!-- Equipment Card 2 -->
+                <div class="card">
+                    <div class="p-6 text-center">
+                        <div class="flex justify-center mb-4">
+                            <svg class="w-16 h-16 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3l1.667 1.667M11.25 3.75l-1.5 1.5M21 12.75l-1.5-1.5M16.5 20.25l-1.5-1.5M21 21l-1.667-1.667M3.75 11.25l1.5-1.5M12.75 21l1.5-1.5M3.75 16.5l1.5-1.5"></path><path stroke-linecap="round" stroke-linejoin="round" d="M12 21a9 9 0 110-18 9 9 0 010 18z"></path></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">세일 (Sail)</h3>
+                        <p class="text-gray-600 text-sm">바람을 받아 보드를 움직이게 하는 돛입니다. 바람의 세기와 사용자의 체격에 맞춰 선택합니다.</p>
+                    </div>
+                </div>
+                <!-- Equipment Card 3 -->
+                <div class="card">
+                    <div class="p-6 text-center">
+                         <div class="flex justify-center mb-4">
+                           <svg class="w-16 h-16 text-blue-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <line x1="12" y1="2" x2="12" y2="22" />  <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" /></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">마스트 (Mast)</h3>
+                        <p class="text-gray-600 text-sm">세일을 지지하는 기둥 역할을 하는 장비로, 카본 함량에 따라 성능과 가격이 달라집니다.</p>
+                    </div>
+                </div>
+                <!-- Equipment Card 4 -->
+                <div class="card">
+                    <div class="p-6 text-center">
+                        <div class="flex justify-center mb-4">
+                           <svg class="w-16 h-16 text-blue-500"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z" /></svg>
+                        </div>
+                        <h3 class="font-bold text-xl mb-2">붐 (Boom)</h3>
+                        <p class="text-gray-600 text-sm">세일을 조종하기 위해 손으로 잡는 부분입니다. 사용자가 세일을 컨트롤하고 방향을 전환할 때 사용합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="py-16">
+            <h2 class="section-title">포토 갤러리</h2>
+            <p class="section-subtitle">사진으로 만나는 윈드서핑의 역동적인 순간들</p>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <div class="grid gap-4">
+                    <div><img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="https://placehold.co/500x800/0077be/ffffff?text=역동적인+윈드서핑" alt="역동적인 윈드서핑 장면"></div>
+                    <div><img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="https://placehold.co/500x500/00a8e0/ffffff?text=아름다운+바다" alt="윈드서핑과 바다"></div>
+                </div>
+                <div class="grid gap-4">
+                    <div><img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="https://placehold.co/500x500/34d399/ffffff?text=장비+클로즈업" alt="윈드서핑 장비"></div>
+                    <div><img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="https://placehold.co/500x800/f59e0b/ffffff?text=노을+속+실루엣" alt="노을 속 윈드서퍼"></div>
+                </div>
+                <div class="grid gap-4">
+                    <div><img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="https://placehold.co/500x800/ef4444/ffffff?text=점프하는+순간" alt="점프하는 윈드서퍼"></div>
+                    <div><img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="https://placehold.co/500x500/8b5cf6/ffffff?text=그룹+윈드서핑" alt="함께 즐기는 윈드서핑"></div>
+                </div>
+                 <div class="grid gap-4">
+                    <div><img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="https://placehold.co/500x500/10b981/ffffff?text=초보자+강습" alt="초보자 강습"></div>
+                    <div><img class="h-auto max-w-full rounded-lg shadow-md transition-transform duration-300 hover:scale-105" src="https://placehold.co/500x800/ec4899/ffffff?text=시원한+물보라" alt="시원한 물보라"></div>
+                </div>
+            </div>
+        </section>
+
+         <!-- Getting Started Section -->
+        <section id="start" class="py-16">
+            <div class="bg-blue-600 rounded-2xl text-white p-12 text-center shadow-xl">
+                <h2 class="text-3xl font-bold mb-4">지금 바로 시작해보세요!</h2>
+                <p class="mb-8 max-w-2xl mx-auto">가까운 윈드서핑 스쿨이나 동호회를 통해 전문가의 강습을 받는 것이 가장 안전하고 빠른 입문 방법입니다. 기초 체력과 수영 능력이 있다면 누구나 즐길 수 있습니다.</p>
+                <a href="#" class="bg-white text-blue-600 font-bold py-3 px-8 rounded-full hover:bg-gray-200 transition-all duration-300 transform hover:scale-105 shadow-lg">가까운 스쿨 찾아보기</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <p>&copy; 2025 Wind & Wave. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
